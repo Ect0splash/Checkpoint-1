@@ -1,4 +1,4 @@
-# Quiz - Réponses
+# Quiz
 
 ---
 
