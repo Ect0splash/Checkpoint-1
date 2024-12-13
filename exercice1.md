@@ -99,9 +99,7 @@ Vérifiez le swap :
 
 swapon --show
 
-![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/9%20-%20verif%20partition.PNG)
 ![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/10%20-%20verif%20swap.PNG)
 
 ----
 
-# Exercice 2 - Script de création d'utilisateurs en bash
