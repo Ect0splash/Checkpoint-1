@@ -35,6 +35,9 @@ Changez le type de la deuxième partition en swap :
 Tapez t, sélectionnez la partition 2, et entrez 82 pour le type "Linux swap".
 Sauvegardez les modifications avec w.
 
+![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/2%20-%20partition%206g.PNG)
+![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/3%20-%20partition%204g.PNG)
+
 ---
 
 ### 2. Formater les partitions
