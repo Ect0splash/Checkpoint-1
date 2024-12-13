@@ -1,6 +1,5 @@
 # Checkpoint-1
 # Exercice 1 - Gestion du stockage 
-
 # Préparation du second disque dur
 
 ## Objectif
@@ -116,3 +115,6 @@ swapon --show
 
 ![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/9%20-%20verif%20partition.PNG)
 
+----
+
+# Exercice 2 - Script de création d'utilisateurs en bash
