@@ -66,6 +66,9 @@ bash
 Copier le code
 swapon --show
 
+![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/6%20-%20swap%202.PNG)
+
+
 ---
 
 ### 4. Monter la partition DATA
@@ -75,6 +78,8 @@ bash
 Copier le code
 sudo mkdir -p /mnt/DATA
 sudo mount /dev/sdb1 /mnt/DATA
+
+![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/7%20-%20montage%20partition.PNG)
 
 ---
 
@@ -91,6 +96,8 @@ Copier le code
 LABEL=DATA  /mnt/DATA  ext4  defaults  0  2
 LABEL=SWAP  none       swap  sw        0  0
 
+![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/8%20-%20modif%20permanentes.PNG)
+
 ---
 
 ### 6. Vérifications finales
@@ -106,4 +113,6 @@ Vérifiez le swap :
 bash
 Copier le code
 swapon --show
+
+![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/9%20-%20verif%20partition.PNG)
 
