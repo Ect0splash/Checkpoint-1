@@ -35,7 +35,7 @@ Sauvegardez les modifications avec w.
 
 ---
 
-### 3. Formater les partitions
+### 2. Formater les partitions
 Formatez la partition DATA en ext4 et configurez la partition SWAP :
 
 bash
@@ -45,7 +45,7 @@ sudo mkswap /dev/sdb2 -L SWAP$
 
 ---
 
-### 4. Activer et désactiver le swap
+### 3. Activer et désactiver le swap
 Désactivez l'ancien swap :
 bash
 Copier le code
@@ -61,7 +61,7 @@ swapon --show
 
 ---
 
-### 5. Monter la partition DATA
+### 4. Monter la partition DATA
 Créez un point de montage et montez la partition DATA :
 
 bash
@@ -71,7 +71,7 @@ sudo mount /dev/sdb1 /mnt/DATA
 
 ---
 
-### 6. Rendre les modifications permanentes
+### 5. Rendre les modifications permanentes
 Modifiez le fichier /etc/fstab pour monter automatiquement les partitions et activer le swap au démarrage :
 
 bash
@@ -86,7 +86,7 @@ LABEL=SWAP  none       swap  sw        0  0
 
 ---
 
-### 7. Vérifications finales
+### 6. Vérifications finales
 Vérifiez les partitions :
 bash
 Copier le code
