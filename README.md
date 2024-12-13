@@ -12,12 +12,11 @@
 
 ### 1. Identifier le disque
 Pour vérifier la présence du disque et ses détails :
-```bash
 lsblk
 . Créer les partitions
 Utilisez fdisk pour créer deux partitions sur le disque /dev/sdb :
 
-bash
+
 Copier le code
 sudo fdisk /dev/sdb
 Tapez n pour créer une nouvelle partition.
@@ -33,13 +32,19 @@ Fin : laissez par défaut (jusqu'à la fin du disque).
 Changez le type de la deuxième partition en swap :
 Tapez t, sélectionnez la partition 2, et entrez 82 pour le type "Linux swap".
 Sauvegardez les modifications avec w.
+
+---
+
 ### 3. Formater les partitions
 Formatez la partition DATA en ext4 et configurez la partition SWAP :
 
 bash
 Copier le code
 sudo mkfs.ext4 /dev/sdb1 -L DATA
-sudo mkswap /dev/sdb2 -L SWAP
+sudo mkswap /dev/sdb2 -L SWAP$
+
+---
+
 ### 4. Activer et désactiver le swap
 Désactivez l'ancien swap :
 bash
@@ -53,6 +58,9 @@ Vérifiez que le swap actif est celui de la partition SWAP :
 bash
 Copier le code
 swapon --show
+
+---
+
 ### 5. Monter la partition DATA
 Créez un point de montage et montez la partition DATA :
 
@@ -60,6 +68,9 @@ bash
 Copier le code
 sudo mkdir -p /mnt/DATA
 sudo mount /dev/sdb1 /mnt/DATA
+
+---
+
 ### 6. Rendre les modifications permanentes
 Modifiez le fichier /etc/fstab pour monter automatiquement les partitions et activer le swap au démarrage :
 
@@ -72,6 +83,9 @@ css
 Copier le code
 LABEL=DATA  /mnt/DATA  ext4  defaults  0  2
 LABEL=SWAP  none       swap  sw        0  0
+
+---
+
 ### 7. Vérifications finales
 Vérifiez les partitions :
 bash
