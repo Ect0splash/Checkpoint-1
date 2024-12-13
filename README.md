@@ -8,6 +8,8 @@
 - **Partition 2** : reste du disque, type `swap`, nommée **SWAP**.
 - Activer la partition **SWAP** et désactiver celle du premier disque.
 
+![Capture d'écran de la partition]([capture.png](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/1.PNG))
+
 ---
 
 ### 1. Identifier le disque
