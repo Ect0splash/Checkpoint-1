@@ -48,7 +48,7 @@ Copier le code
 sudo mkfs.ext4 /dev/sdb1 -L DATA
 sudo mkswap /dev/sdb2 -L SWAP$
 
-![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/4%20-swap.PNG)
+![Capture d'écran de la partition](https://github.com/Ect0splash/Checkpoint-1/blob/main/Screenshot/Exercice%201%20-%20Gestion%20du%20stockage/5%20-formatage%20des%20partitions.PNG)
 
 ---
 
